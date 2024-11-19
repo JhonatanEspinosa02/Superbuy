@@ -5,7 +5,8 @@ export const ApiCustom = async () => {
     const data = await response.json();
 
     return data;
-  } catch (error) {
-    console.log(error);
+  } catch (err) {
+    console.log(err);
+    console.log("There are here an error");
   }
 };
